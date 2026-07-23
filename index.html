@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SafeStart Driving School</title>
+
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="docc.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <span>Safe</span>Start
+            <small>Driving School</small>
+        </div>
+
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#classes">Driving Classes</a>
+            <a href="#records">Record Keeping</a>
+            <a href="#controls">Internal Controls</a>
+        </nav>
+
+        <button id="menuButton" class="menu-button">
+            ☰
+        </button>
+
+    </header>
+
+
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="welcome-text">
+                WELCOME TO SAFESTART
+            </p>
+
+            <h1>
+                
+                <span># TRAIN WITH THE BEST...!!</span>
+            </h1>
+
+            <p>
+                SafeStart Driving School is committed to providing
+                professional driver training, road safety education
+                and responsible driving skills.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#classes" class="btn primary-btn">
+                    Explore Classes
+                </a>
+
+                <a href="#news" class="btn secondary-btn">
+                    Latest News
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUICK INFORMATION -->
+    <section class="quick-info">
+
+        <div class="info-box">
+            <h3>Professional Training</h3>
+            <p>
+                Quality training designed to develop competent and
+                responsible drivers.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h3>Road Safety</h3>
+            <p>
+                Promoting defensive driving and responsible road use.
+            </p>
+        </div>
+
+        <div class="info-box">
+            <h3>Reliable Communication</h3>
+            <p>
+                Stay updated on important SafeStart news and information.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- NEWS SECTION -->
+    <section id="news" class="section">
+
+        <div class="section-heading">
+            <p>STAY INFORMED</p>
+            <h2>Latest News & Announcements</h2>
+        </div>
+
+        <div class="news-container">
+
+            <article class="news-card">
+
+                <div class="news-date">
+                    18 JUL 2026
+                </div>
+
+                <h3>
+                    SafeStart Continues to Promote Road Safety
+                </h3>
+
+                <p>
+                    SafeStart continues to engage students, universities
+                    and communities in promoting responsible driving and
+                    road safety.
+                </p>
+
+                <button class="read-more">
+                    Read More
+                </button>
+
+            </article>
+
+
+            <article class="news-card">
+
+                <div class="news-date">
+                    ANNOUNCEMENT
+                </div>
+
+                <h3>
+                    New Driver Training Opportunities
+                </h3>
+
+                <p>
+                    Individuals seeking professional driving skills can
+                    access a variety of driving classes offered by
+                    SafeStart Driving School.
+                </p>
+
+                <button class="read-more">
+                    Read More
+                </button>
+
+            </article>
+
+
+            <article class="news-card">
+
+                <div class="news-date">
+                    ROAD SAFETY
+                </div>
+
+                <h3>
+                    Defensive Driving Awareness
+                </h3>
+
+                <p>
+                    Defensive driving helps drivers identify risks early
+                    and make safer decisions on the road.
+                </p>
+
+                <button class="read-more">
+                    Read More
+                </button>
+
+            </article>
+
+        </div>
+
+    </section>
+      <!-- =========================
+         STUDY SECTION
+    ========================== -->
+
+    <section class="study-section">
+
+        <div class="study-header">
+
+            <p>LEARNING CENTRE</p>
+
+            <h1>Study Documents</h1>
+
+            <span>
+                Access and study important learning materials and documents.
+            </span>
+
+        </div>
+
+
+        <!-- SEARCH BAR -->
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for a document..."
+            >
+
+        </div>
+
+
+        <!-- DOCUMENT LIST -->
+
+        <div
+            class="document-container"
+            id="documentContainer"
+        >
+
+            <!-- DOCUMENT 1 -->
+
+            <div
+                class="document-card"
+                data-title="Driving Learner Handbook"
+            >
+
+                <div class="document-icon">
+                    📘
+                </div>
+
+                <div class="document-content">
+
+                    <h2>
+                        Driving Learner Handbook
+                    </h2>
+
+                    <p>
+                        Study the official learner driver handbook.
+                    </p>
+
+                    <button
+                        class="view-button"
+                        onclick="viewDocument(
+                        'Driving Learner Handbook',
+                        'https://example.com/driving-handbook.pdf'
+                        )"
+                    >
+                        View Document
+                        <a href="https://ntsa-kenya-learner-driver-handbook.en.softonic.com/android"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="website-link">
+                                Click Here
+                         </a>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- DOCUMENT 2 -->
+
+            <div
+                class="document-card"
+                data-title="Preventive Maintenance Notes"
+            >
+
+                <div class="document-icon">
+                    🔧
+                </div>
+
+                <div class="document-content">
+
+                    <h2>
+                        Preventive Maintenance Notes
+                    </h2>
+
+                    <p>
+                        Read notes about vehicle preventive maintenance.
+                    </p>
+
+                    <button
+                        class="view-button"
+                        onclick="viewDocument(
+                        'Preventive Maintenance Notes',
+                        'https://example.com/preventive-maintenance.pdf'
+                        )"
+                    >
+                        View Document
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- DOCUMENT 3 -->
+
+            <div
+                class="document-card"
+                data-title="Highway Code"
+            >
+
+                <div class="document-icon">
+                    🚦
+                </div>
+
+                <div class="document-content">
+
+                    <h2>
+                        Highway Code
+
+                    </h2>
+
+                    <p>
+                        Study important road safety rules and regulations.
+                    </p>
+
+                    <button
+                        class="view-button"
+                        onclick="viewDocument(
+                        'Highway Code',
+                        'https://example.com/highway-code.pdf'
+                        )"
+                    >
+                        View Document
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DOCUMENT VIEWER
+    ========================== -->
+
+    <div
+        class="document-modal"
+        id="documentModal"
+    >
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h2 id="documentTitle">
+                    Document
+                </h2>
+
+                <button
+                    class="close-button"
+                    onclick="closeDocument()"
+                >
+                    &times;
+                </button>
+
+            </div>
+
+
+            <iframe
+                id="documentFrame"
+                src=""
+            >
+            </iframe>
+
+        </div>
+
+    </div>
+
+
+    <script src="doc.js"></script>
+    
+      <!-- end of document SECTION -->
+
+
+    <!-- DRIVING CLASSES SECTION -->
+    <section id="classes" class="section light-section">
+
+        <div class="section-heading">
+
+            <p>OUR SERVICES</p>
+
+            <h2>Driving Classes</h2>
+
+            <span>
+                <a href="https://karanujohn.github.io/onlineflyer.github.io/">click here to view the flyer</a>
+            </span>
+
+        </div>
+
+
+        <div class="classes-container">
+
+            <div class="class-card">
+
+                <div class="class-icon">
+                    🚗
+                </div>
+
+                <h3>Class B1</h3>
+
+                <h4>Automatic Vehicles</h4>
+
+                <p>
+                    Training for learners who wish to drive automatic
+                    saloon vehicles.
+                </p>
+
+                <ul>
+                    <li>Theory lessons</li>
+                    <li>Practical training</li>
+                    <li>Road safety education</li>
+                    <li>Test preparation</li>
+                </ul>
+
+                <button class="learn-more">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="class-card featured">
+
+                <div class="class-icon">
+                    🚘
+                </div>
+
+                <h3>Class B2</h3>
+
+                <h4>Manual Vehicles</h4>
+
+                <p>
+                    Training for learners who wish to drive manual
+                    saloon vehicles.
+                </p>
+
+                <ul>
+                    <li>Manual vehicle control</li>
+                    <li>Road safety</li>
+                    <li>Defensive driving</li>
+                    <li>Practical training</li>
+                </ul>
+
+                <button class="learn-more">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="class-card">
+
+                <div class="class-icon">
+                    🏍️
+                </div>
+
+                <h3>Motorcycle Training</h3>
+
+                <h4>Safe Riding Skills</h4>
+
+                <p>
+                    Training focused on safe, responsible and defensive
+                    motorcycle riding.
+                </p>
+
+                <ul>
+                    <li>Basic riding skills</li>
+                    <li>Traffic awareness</li>
+                    <li>Safety procedures</li>
+                    <li>Practical training</li>
+                </ul>
+
+                <button class="learn-more">
+                    Learn More
+                </button>
+
+            </div>
+
+
+            <div class="class-card">
+
+                <div class="class-icon">
+                    🚛
+                </div>
+
+                <h3>Commercial Vehicles</h3>
+
+                <h4>Professional Training</h4>
+
+                <p>
+                    Training for individuals seeking professional
+                    commercial driving skills.
+                </p>
+
+                <ul>
+                    <li>Vehicle handling</li>
+                    <li>Vehicle inspection</li>
+                    <li>Defensive driving</li>
+                    <li>Road safety</li>
+                </ul>
+
+                <button class="learn-more">
+                    Learn More
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RECORD KEEPING SECTION -->
+    <section id="records" class="section">
+
+        <div class="two-column">
+
+            <div class="section-heading left-heading">
+
+                <p>ACCOUNTABILITY</p>
+
+                <h2>
+                    Record Keeping at SafeStart
+                </h2>
+
+                <p>
+                    Accurate records help SafeStart maintain accountability,
+                    monitor operations and make informed business decisions.
+                </p>
+
+            </div>
+
+
+            <div class="records-content">
+
+                <div class="record-item">
+
+                    <div class="number">
+                        01
+                    </div>
+
+                    <div>
+                        <h3>Student Records</h3>
+
+                        <p>
+                            Student registration details 
+                            <ol>
+                                <li>write the receit</li>
+                                <li>pdate the manual and excel cashbook</li>
+                                <li>update the registration book</li>
+                                <li></li>
+
+                            </ol>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="record-item">
+
+                    <div class="number">
+                        02
+                    </div>
+
+                    <div>
+                        <h3>Financial Records</h3>
+
+                        <p>
+                             <ol>
+                                <li>write the receit</li>
+                                <li>update excel</li>
+                                <li>any discount should have a note</li>
+                            </ol>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="record-item">
+
+                    <div class="number">
+                        03
+                    </div>
+
+                    <div>
+                        <h3>Operational Records</h3>
+
+                        <p>
+                            <ol>
+                                <li>students should attend both theory and practical classes</li>
+                                <li>students should have a form a a pdl for practicals </li>
+                                <li>alwawys remember to update the pdl</li>
+                            </ol>
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INTERNAL CONTROLS SECTION -->
+    <section id="controls" class="section controls-section">
+
+        <div class="section-heading">
+
+            <p>GOOD GOVERNANCE</p>
+
+            <h2>
+                Internal Controls
+            </h2>
+
+            <span>
+                Protecting resources. Promoting accountability.
+            </span>
+
+        </div>
+
+
+        <div class="controls-container">
+
+            <div class="control-card">
+
+                <div class="control-number">
+                    01
+                </div>
+
+                <h3>
+                    Segregation of Duties
+                </h3>
+
+                <p> nstructors
+                    <ol>
+                        <li>collect pdls from the office</li>
+                        <li>train students within the distance and timings required</li>
+                        <li>forward inquiries to the office</li>
+                        
+                    </ol>
+                </p>
+                 <p> receptionists
+                    <ol>
+                        <li>student registration</li>
+                        <li> proper follow ups </li>
+                        <li>proper record keeping</li>
+                        <li>teaching when there is no teacher</li>
+                        
+                    </ol>
+                </p>
+                <p> Theory teachers
+                    <ol>
+                        <li>theory</li>
+                        <li> time table preparation </li>
+                        <li>informing about student progress</li>                
+                    </ol>
+                </p>
+
+            </div>
+
+
+            <div class="control-card">
+
+                <div class="control-number">
+                    02
+                </div>
+
+                <h3>
+                    Cash Controls
+                </h3>
+
+                <p>
+                    
+                </p>
+
+            </div>
+
+
+            <div class="control-card">
+
+                <div class="control-number">
+                    03
+                </div>
+
+                <h3>
+                    Vehicle Controls
+                </h3>
+
+                <p>
+                    Vehicles should be inspected, maintained and monitored
+                    to ensure safety and efficient use.
+                </p>
+
+            </div>
+
+
+            <div class="control-card">
+
+                <div class="control-number">
+                    04
+                </div>
+
+                <h3>
+                    Authorization
+                </h3>
+
+                <p>
+                    Important expenditures and business activities should
+                    be approved by authorized personnel.
+                </p>
+
+            </div>
+
+
+            <div class="control-card">
+
+                <div class="control-number">
+                    05
+                </div>
+
+                <h3>
+                    Asset Protection
+                </h3>
+
+                <p>
+                    Company property, documents and equipment should be
+                    protected from unauthorized access.
+                </p>
+
+            </div>
+
+
+            <div class="control-card">
+
+                <div class="control-number">
+                    06
+                </div>
+
+                <h3>
+                    Monitoring
+                </h3>
+
+                <p>
+                    Regular reviews help identify errors and improve
+                    the performance of SafeStart operations.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT / CALL TO ACTION -->
+    <section class="contact-section">
+
+        <h2>
+            Ready to Start Your Journey?
+        </h2>
+
+        <p>
+            Become a safe, confident and responsible driver with SafeStart.
+        </p>
+
+        <button id="contactButton" class="btn primary-btn">
+            Contact SafeStart
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>SafeStart Driving School</h3>
+
+                <p>
+                    Professional driving training for a safer tomorrow.
+                </p>
+            </div>
+
+
+            <div>
+
+                <h4>Quick Links</h4>
+
+                <a href="#home">Home</a>
+                <a href="#news">News</a>
+                <a href="#classes">Classes</a>
+                <a href="#records">Records</a>
+                <a href="#controls">Controls</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Contact</h4>
+
+                <p>📞 Call SafeStart</p>
+
+                <p>📧 Email Us</p>
+
+                <p>📍 Visit Our Branches</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            <p>
+                © 2026 SafeStart Driving School.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="docc.js"></script>
+
+</body>
+</html>
